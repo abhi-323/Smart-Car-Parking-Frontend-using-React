@@ -1,7 +1,7 @@
 const Card = ({ id, flag }) => {
   const park = () => {
     const res = fetch(
-      `https://api.thingspeak.com/update?api_key=MVWEGW2JVVF0KYJ1&field${id}=${
+      `https://api.thingspeak.com/update?api_key=P7K86K9NYGUXWTDZ&field${id}=${
         1 - flag
       }`
     )
@@ -11,13 +11,13 @@ const Card = ({ id, flag }) => {
   return (
     <div
       className={`col-span-6 sm:col-span-3 lg:col-span-2  py-4 px-5 opacity-90 border m-3 border-indigo-500 rounded-md  bg-white font-mono text-center ${
-        flag === 1 && "opacity-50 "
+        flag === 1 && "opacity-60 "
       }`}
     >
       <h1 className="font-bold pb-2 uppercase">Slot {id}</h1>
       <div>
         <img
-          src={require("/home/aman/Personal/reactjs/parking/src/Images/pic2.png")}
+          src={require("./Images/pic2.png")}
           className="w-32 h-32 mx-auto"
         ></img>
       </div>

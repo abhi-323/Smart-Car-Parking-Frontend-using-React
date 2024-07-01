@@ -39,7 +39,7 @@ const App = () => {
           <div className="font-bold text-2xl px-3">Smart Parking System</div>
         </div>
       </nav>
-      <div className="bg-[url('/home/aman/Personal/reactjs/parking/src/Images/background.jpg')] relative bg-fixed bg-center bg-cover bg-no-repeat ">
+      <div className="bg-[url('./Images/background.jpg')] relative bg-fixed bg-center bg-cover bg-no-repeat ">
         <div className=" m-auto py-9">
           <div className="grid grid-cols-6 lg:w-4/5 mx-auto">
             {parking.map((e, i) => {
